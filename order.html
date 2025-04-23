@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Schedule your laundry pickup with Swift Wash - convenient, reliable service in Palakkad">
+    <title>Schedule Pickup - Swift Wash Laundry Service</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="data/logo.png" alt="Swift Wash Logo" height="60">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="services.html">Services & Pricing</a></li>
+                    <li><a href="order.html" class="active">Schedule Pickup</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="page-hero" class="hero-section">
+            <div class="container">
+                <h1>Schedule Your Pickup</h1>
+                <p class="subtitle">We'll pick up, clean, and deliver your laundry at your convenience</p>
+            </div>
+        </section>
+
+        <section class="feature-section">
+            <div class="container">
+                <div class="order-steps">
+                    <div class="step-indicator active">
+                        <span class="step-number">1</span>
+                        <span class="step-name">Service Selection</span>
+                    </div>
+                    <div class="step-indicator">
+                        <span class="step-number">2</span>
+                        <span class="step-name">Pickup Details</span>
+                    </div>
+                    <div class="step-indicator">
+                        <span class="step-number">3</span>
+                        <span class="step-name">Confirmation</span>
+                    </div>
+                </div>
+
+                <form id="pickup-form" class="order-form" action="#" method="POST">
+                    <h2>Select Your Services</h2>
+                    
+                    <div class="form-section">
+                        <h3>Service Type</h3>
+                        <div class="service-options">
+                            <label class="service-card">
+                                <input type="radio" name="service-type" value="regular" checked>
+                                <div class="card-content">
+                                    <i class="fas fa-tshirt"></i>
+                                    <h4>Regular Laundry</h4>
+                                    <p>Wash, dry & fold</p>
+                                    <div class="price">₹80-120/kg</div>
+                                </div>
+                            </label>
+                            
+                            <label class="service-card">
+                                <input type="radio" name="service-type" value="dryclean">
+                                <div class="card-content">
+                                    <i class="fas fa-umbrella"></i>
+                                    <h4>Dry Cleaning</h4>
+                                    <p>Special garment care</p>
+                                    <div class="price">₹150-500/item</div>
+                                </div>
+                            </label>
+                            
+                            <label class="service-card">
+                                <input type="radio" name="service-type" value="ironing">
+                                <div class="card-content">
+                                    <i class="fas fa-iron"></i>
+                                    <h4>Ironing Only</h4>
+                                    <p>Professional pressing</p>
+                                    <div class="price">₹30-50/item</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Service Package (Optional)</h3>
+                        <div class="package-options">
+                            <label class="package-option">
+                                <input type="radio" name="package" value="none" checked>
+                                <span>No package (Pay as you go)</span>
+                            </label>
+                            <label class="package-option">
+                                <input type="radio" name="package" value="swiftbasic">
+                                <span>SwiftBasic (₹300 - Wash & fold)</span>
+                            </label>
+                            <label class="package-option">
+                                <input type="radio" name="package" value="swiftcare">
+                                <span>SwiftCare (₹500 - Delicates & stain removal)</span>
+                            </label>
+                            <label class="package-option">
+                                <input type="radio" name="package" value="swiftplus">
+                                <span>SwiftPlus (₹2,500/mo - All services + 15% off)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Special Instructions</h3>
+                        <textarea name="instructions" placeholder="Any special care instructions for your clothes..."></textarea>
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="button button-secondary" disabled>Back</button>
+                        <button type="button" class="button button-primary next-btn">Continue to Pickup Details</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="feature-section alt-bg">
+            <div class="container">
+                <h2>How Our Pickup Works</h2>
+                <div class="pickup-info">
+                    <div class="info-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>1. Schedule</h3>
+                        <p>Choose a date and time that works for you</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-bags-shopping"></i>
+                        <h3>2. Prepare</h3>
+                        <p>Place clothes in any bag (we'll provide clean bags)</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-truck"></i>
+                        <h3>3. We Collect</h3>
+                        <p>Our driver picks up at your doorstep</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-home"></i>
+                        <h3>4. We Deliver</h3>
+                        <p>Fresh, clean clothes returned to you</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="faq.html">FAQ</a>
+            </div>
+            <p>&copy; 2025 Swift Wash. All rights reserved.</p>
+            <p>Contact us: <a href="tel:+919895000040">9895000040</a> | <a href="mailto:washing@gmail.com">washing@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form progression (would be enhanced with real form handling)
+        document.querySelector('.next-btn').addEventListener('click', function() {
+            alert('In a complete implementation, this would take you to the next step of the scheduling process.');
+            // window.location.href = 'order-step2.html';
+        });
+    </script>
+
+</body>
+</html>
